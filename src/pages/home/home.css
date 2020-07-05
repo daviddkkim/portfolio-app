@@ -1,0 +1,90 @@
+.container {
+  display:grid;
+  padding: 16px 160px 16px 160px;
+  height: 100vh;
+  grid-template-rows: auto 70%;
+  
+}
+
+
+
+.home-container{
+  display:grid;
+  padding:16px 0px 16px 0px;
+  grid-template-columns: 50% 16px 50%;
+  
+
+}
+.home-left {
+    overflow: hidden;
+    background-color:white;
+    color: black;
+    grid-column: 1;
+    text-align: center;
+    border-radius: 10px;
+    display:grid;
+    grid-template-rows: 15% auto auto;
+    grid-template-columns: 80px auto 80px;
+  }
+
+.intro-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 20% 20% auto auto;
+  padding: 32px 0px 32px 0px
+
+}
+
+.intro-letters {
+  grid-column: 1/5;
+}
+.intro-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.intro-occupation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 48px;
+}
+.intro-mission {
+  justify-self: end;
+  grid-row: 2;
+  grid-column: 4/6;
+  text-align: end;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  
+}
+
+.mission-statements{
+  padding-bottom: 16px;
+}
+  .home-left-title {
+    grid-row:1 ;
+    grid-column: 2;
+  }
+  .home-left-card {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+.home-right {
+  overflow:hidden;
+  background-color: white;
+  color: black;
+  grid-column: 3;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px 16px;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}

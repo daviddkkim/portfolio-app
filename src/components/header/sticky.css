@@ -1,0 +1,6 @@
+.sticky-wrapper {
+    position: relative;
+    height: 103px; /* We need to change this value */
+    padding-top: 80px;
+  }
+  

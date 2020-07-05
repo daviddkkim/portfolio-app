@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header'
+import Home from './pages/home/home'
+import { Switch, Route, withRouter} from 'react-router-dom'
+import StickyHeader from './components/header/stickyHeader';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div >
+        <StickyHeader/>
+        <div>
+        <Switch>
+                <Route path="/" component= {Home} exact />
+                <Route path="/david" render = { () => (<div>david</div>)} />
+                <Route path="/about" render = { () => (<div>about</div>)} />
+                <Route path="/work" render = { () => (<div>work</div>)} />
+                <Route path="/resume" render = { () => (<div>resume</div>)} />
+
+        </Switch>
+        </div>
+      </div>
   );
 }
 

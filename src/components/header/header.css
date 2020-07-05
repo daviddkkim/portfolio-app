@@ -1,0 +1,57 @@
+.header {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.title {
+    display: flex;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    padding: 32px 160px;
+    flex: 9 ;
+    font-weight: bold;
+}
+
+.navList {
+    display:flex;
+    align-items: center;
+    flex: 3;
+    padding: 0px 160px;
+    justify-content: flex-end;
+
+}
+.horizontal {
+    padding-left: 24px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+
+    
+}
+
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a.horizontal {
+    text-decoration: underline;
+    text-decoration-color: #8E9AAF;
+}
